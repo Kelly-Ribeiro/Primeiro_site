@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Conexão do JavaScript dentro do html-->
+    <script src="script.js"></script>
+</head>
+<body style="text-align: left;">
+    <h1>JavaScript no desenvolvimento WEB</h1>
+    <p>JavaScript permite criar interfaces de usuário interativas. Páginas web podem responder a ações do usuário, como cliques, movimentos do mouse, preenchimento de formulários, etc., sem a necessidade de recarregar a página.</p>
+    <h1>DOM - Document Object Model</h1>
+    <p>Criado automaticamente pelo navegador ao carregar a página,e assim podemos manipular os elementos criados no HTML. O JavaScript permite a manipulação dinâmica do DOM, que representa a estrutura hierárquica de elementos HTML na página. Isso possibilita adicionar, remover ou modificar elementos e atributos na página em tempo real.</p>
+    <h1>CONEXÃO</h1>
+    <p>Adicionem aqui </p>
+
+    <h1>Variáveis</h1>
+    <p>Coloque a definição e variável aqui</p>
+    <p>Exemplo de como criar uma variável em java:
+        <br>
+    var minhaVariavel = "Olá, mundo!";<br>
+    E para realizar a impressão no console, utilizamo o comando console.log(minhaVariavel);
+    <br>
+    Todo comando deve terminar com ; ao final.
+    Adicionar as regras de nomeação da variável.
+    </p>
+    <h1>Tipos de dados </h1>
+    <br>
+    <h1>Formatando Strings</h1>
+       <p>JavaScript oferece uma variedade de funções para manipulação de strings. Aqui estão algumas das funções mais comuns:
+        
+        <br>
+
+        <b>length:</b>
+        
+        <br>
+         Retorna o comprimento da string.
+        var minhaString = "Hello, World!";
+        console.log(minhaString.length); // 
+       
+        <br>
+        <b>Saída: 13</b>
+        <b>charAt(index):</b>
+
+        Retorna o caractere na posição especificada.
+        var minhaString = "Hello";
+        console.log(minhaString.charAt(0)); //  <b>Saída: "H"</b>
+     <b>concat(str1, str2, ..., strN):</b>
+        Concatena duas ou mais strings.
+        var str1 = "Hello";
+        var str2 = " ";
+        var str3 = "World";
+        console.log(str1.concat(str2, str3)); // <b>Saída: "Hello World"</b>
+        <b>indexOf(substring, start):</b>
+        
+        <br>
+
+        Retorna o índice da primeira ocorrência da substring, começando a busca a partir do índice especificado.
+        var minhaString = "Hello, World!";
+        console.log(minhaString.indexOf("World")); // Saída: 7
+        lastIndexOf(substring, start):
+        Retorna o índice da última ocorrência da substring, começando a busca a partir do índice especificado.
+        var minhaString = "Hello, World!";
+        console.log(minhaString.lastIndexOf("o")); // 
+        <b>Saída: 8</b>
+        <br>
+        
+        Extrai uma parte da string entre os índices start e end (não incluindo end).
+        var minhaString = "Hello, World!";
+        console.log(minhaString.slice(0, 5)); // <b>Saída:</b>"Hello"
+        <b>substring(start, end):</b>
+        Similar a slice, extrai uma parte da string entre start e end.
+        var minhaString = "Hello, World!";
+        console.log(minhaString.substring(7, 12)); // <td><b>Saída: "World"</b></td>
+        <b>substr(start, length):</b> 
+        
+        <br>     
+        Extrai uma parte da string a partir de start com o comprimento especificado. var minhaString = "Hello, World!";
+        console.log(minhaString.substr(7, 5)); // <b>Saída: "World"</b>
+        <b>replace(oldStr, newStr):</b>
+        Substitui a primeira ocorrência de oldStr por newStr
+        var minhaString = "Hello, World!";
+        console.log(minhaString.replace("Hello", "Hi")); // <b>Saída: "Hi, World!"</b>
+        <b>toUpperCase() e toLowerCase():</b>
+        var minhaString = "Hello, World!";
+        console.log(minhaString.toUpperCase()); // <b>Saída: "HELLO, WORLD!"</b>
+        console.log(minhaString.toLowerCase()); // <b>Saída: "hello, world!"</b>
+        <br>
+        
+              <h1>Formatando Números</h1>
+            Para formatar as casas decimais dos números podemos utilizar toFixed():
+            
+            <br>
+
+            O método toFixed() converte um número em uma string, mantendo um número específico de casas decimais.
+            var numero = 123.4567;
+            var numeroFormatado = numero.toFixed(2); // Duas casas decimais
+            console.log(numeroFormatado); // Saída: "123.46"
+            
+            A INFORMAÇÃO ABAIXO COLOQUE APÓS OPERADORES:
+            
+            Buscando os elementos HTML no JavaScript
+            Para acessar os elementos HTML em JavaScript, você pode usar vários métodos, dependendo da forma como os elementos são identificados no HTML. <br>
+            
+        <b>Aqui estão alguns métodos comuns:</b>
+            <b>document.getElementById(id):</b>
+            Este método retorna uma referência ao elemento que possui o ID especificado. javascript
+            var meuElemento = document.getElementById("meuId");
+            <b>document.getElementsByClassName(className):</b>
+            Este método retorna uma coleção de elementos que possuem a classe CSS especificada.
+            var meusElementos = document.getElementsByClassName("minhaClasse");
+            document.getElementsByTagName(tagName):
+            Este método retorna uma coleção de elementos com o nome da tag HTML especificada. javascript
+            var minhasTags = 
+            <br>
+
+        <b>document.getElementsByTagName("p");</b>
+        <b>document.querySelector(selector):</b>
+            Este método retorna o primeiro elemento que corresponde ao seletor CSS especificado.
+            var meuElemento = document.querySelector("#meuId");</b>
+
+    
+    <p>Toda a variável armazena uma informação, essa informação tem uma tipologia ou formato.
+
+        Complete com uma tabela
+    </p>
+    <h1>Operadores</h1>
+    <p>Operadores são símbolos que permitem manipular as informações, e temos três tipos: artiméticos, lógicos e relacionais
+        Construa uma tabela com todas as funções
+    </p>
+    <h1> Teste nossa primeira calculadora em JavaScript</h1>
+    <div class="calculadora">
+        
+            <!--Cx de entrada para digitar nº-->
+        <div>
+            <input type="number" id="numero1" placeholder="Digite o primeiro número">
+        </div>
+
+        <div>
+            <input type="number" id="numero2" placeholder="Digite o segundo número">
+
+        </div>
+            <!--Criando os botões e inserindo função onclick-->
+        <div>
+            <button onclick="calcular('soma')">soma</button>
+        </div>
+        <div>
+            <button onclick="calcular('subtracao')">Subtração</button>
+        </div>
+        <div>
+            <button onclick="calcular('multiplicacao')">multiplicacao</button></div>
+        
+            <button onclick="calcular('divisao')">Divisão</button>
+        </div>
+            <!--Tag para aparecer resultado-->
+            <p >Resultado</p>
+            <p id="resultado"></p>
+    
+        
+<br>
+
+<h1>Acendendo a luz</h1>
+<br>
+<p> Este efeito foi gerado por meio da funcionalidade do JavaScript.</p>
+<!--Imagem inicial com a luz apagada-->
+<img id="luz" src="src/imagens/luzApagada.jpg" alt="Luz apagada" onmouseover="ligarLuz()" onmouseout="apagarLuz()">
+</br>
+    
+</body>
+</html>
